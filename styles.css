@@ -1,0 +1,346 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #0099ff, #000000);
+  color:#fff;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%; /* Ajusta el ancho del encabezado al 100% */
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Cambia los valores para ajustar el efecto de sombra del texto */
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%; /* Ajusta el ancho del pie de página al 100% */
+  color: #fff;
+}
+h1{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+label {
+  font-weight: bold;
+  width: 70px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  align-content: center;
+}
+.label-reporte{
+  width: 100px;
+  text-align: center;
+}
+span{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 5px;
+}
+div{
+  display:flex;
+}
+progress {
+  max-width:20%;
+}
+/* Clases */
+.contenedorP{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.05);/* Cambia el valor de transparencia para ajustar la opacidad del contenedor */
+  border: 1px solid rgb(0 217 255 / 93%);/* Añade un borde azul transparente */
+  max-width: 1000px;
+  padding: 5px;
+  margin: 5px;
+}
+.contenedorT{
+  background-color: rgba(255, 255, 255, 0.05);/* Cambia el valor de transparencia para ajustar la opacidad del contenedor */
+  border: 1px solid rgb(0 217 255 / 93%);/* Añade un borde azul transparente */
+  max-width: 1000px;
+  padding: 5px;
+  margin: 5px;
+}
+.contenedorL{
+  background-color: rgba(255, 255, 255, 0.05);/* Cambia el valor de transparencia para ajustar la opacidad del contenedor */
+  padding: 5px;
+  margin: 5px;
+}
+.labelEuros{
+  width: 100px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+/* Estilos de ventanas */
+.ventana{
+  background-color: rgba(255, 255, 255, 0.05);/* Cambia el valor de transparencia para ajustar la opacidad del contenedor */
+  border: 1px solid rgb(0 217 255 / 93%);/* Añade un borde azul transparente */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  max-width: 98%;
+}
+.VentanaIngreso {
+  position: relative; /* Añade una posición relativa */
+  width: 300px;
+  text-align: center;
+}
+.VentanaCambios {
+  position: relative; /* Añade una posición relativa */
+  display: block;
+  padding: 5px;
+  width: 370px;
+ 
+  margin-top: 20px; /* Agrega un margen superior al formulario */
+}
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px 0px 10px;
+  border-radius: 10%;
+}
+.logo-text h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.logo-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+/* Menu */
+nav {
+  width: 98%;
+  display: flex;
+  justify-content: flex-start; /* Ajusta la alineación a la izquierda */
+  align-items: center;
+  overflow: hidden; /* Agrega un desbordamiento oculto para evitar la expansión del menú */
+  flex-direction: row; /* Establece la dirección inicial como horizontal */
+}
+nav.vertical {
+  flex-direction: column; /* Cambia la dirección a vertical cuando se agrega la clase "vertical" */
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row; /* Cambia la dirección del menú a horizontal */
+  justify-content: flex-start; /* Ajusta la alineación a la izquierda */
+}
+nav li {
+  display: block;
+}
+nav li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+nav li a:hover {
+  background-color: rgba(255, 255, 255, 0.05); /* Cambia el valor de transparencia para ajustar el efecto hover */
+}
+/* Botones de cierre de cada formulario */
+.close-button {
+  position: absolute; /* Cambia la posición a relativa */
+  left: 10px; /* Añade un desplazamiento a la izquierda */
+  top: 10px; /* Añade un desplazamiento hacia arriba */
+  cursor: pointer;
+}
+.close-icon {
+  width: 15px;
+  height: 15px;
+  
+  border-radius: 50%;
+}
+.close-icon:before,
+.close-icon:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+}
+.close-icon:before {
+  width: 2px;
+  height: 9px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.close-icon:after {
+  width: 9px;
+  height: 2px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+/* Moviles */
+@media only screen and (max-width: 768px) {
+
+  /* Estilos para dispositivos móviles */
+  .logo{
+    display: none;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: block;
+    position:inherit;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .menu-icon span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: transform 0.3s;
+  }
+
+  .menu-icon:hover span {
+    transform: scale(1.1);
+  }
+
+  .menu-icon.open span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .menu-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.open span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .menu-content {
+    display: none;
+    position:inherit;
+  }
+
+  .menu-content.open {
+    display: block;
+  }
+}
+
+
+
+/* Estilos de texto*/
+.TextoSombra {
+  margin: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Cambia los valores para ajustar el efecto de sombra del texto */
+}
+/* Cambio de color del texto */
+.red-text {
+color: red;
+}
+.blue-text {
+color: blue;
+}
+
+/* Estilos del formulario */
+input:focus{
+  border-color: red; /* Cambia el color del borde */
+  box-shadow: 0 0 5px red; /* Agrega una sombra */
+}
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px;
+  outline: none;
+}
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: 1px;
+  text-align: center;
+}
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #0099ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+  background-color: #0080ff;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.progress-bar-container {
+  display: block;
+  align-items: center;
+  flex-grow: 1;
+  margin: 5px;
+}
+#cobro-form,
+#usuario-form {
+  display: none;
+}
+
+.nombre-container {
+display: flex;
+margin-top: 10px;
+align-items: center;
+}
+.nombre-container input[type="text"] {
+width:70px;
+padding: 5px;
+margin: 2px;
+height: fit-content;
+}
+/*Botones*/
+.button-container {
+margin-top: 20px;
+text-align: center;
+}
+.button-container button {
+margin: 10px;
+padding: 10px 20px;
+color: coral;
+cursor: pointer;
+transition: transform 0.3s;
+}
+.button-container button:active {
+transform: scale(0.95);
+}

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" type="image/png" href="Imagenes/ICONO64x64.png" alt="Logo de la empresa de software">
+  <title>Cajón de Cambios €€€</title>
+  <style>
+    /* Estilos básicos */
+   
+   
+  </style>
+ 
+</head>
+
+<body>
+  <div id="ventanas-container" class="container ventana">
+    <header class="ventana">
+      <div class="logo">
+        <img src="Imagenes/ICONO64x64.png" alt="Logo DinoSoft">
+        <div class="logo-text">
+          <h2 class="TextoSombra">DINOSOFT</h2>
+          <p class="TextoSombra">El siguiente paso</p>
+        </div>
+      </div>
+      <div><h1 class="TextoSombra">Cajon de Cambios</h1></div>
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+	  
+    <nav class="menu-content ventana">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="">Cajon de cambio</a></li>
+        <li><a href="">Iniciar sesion</a></li>
+        <li><a href="#">Salir</a></li>
+      </ul>
+    </nav>
+    <main><!-- Contenido principal de la página -->
+      
+      <div>
+        <form class="ventana VentanaCambios"  id="cobro-form">
+          <div class="close-button" id="usuario-close-button">
+              <span class="close-icon"></span>
+          </div>
+          <div class="nombre-container">
+                <h2 class="TextoSombra">Cajon de Cambio</h2>
+                <input type="text" id="nombre" placeholder="nombre">
+            </div>
+          <div class="input-container ventana">
+              <label for="euro20">20€:</label>
+              <input type="number" id="euro20" min="0" max="45" step="1" value="0">
+              <div class="progress-bar-container">
+                  <progress id="progress20" max="45" value="0"></progress>
+                  <span id="progress20-label"> 0% de 45 ( UF )</span>
+              </div>
+          </div>
+    
+          <div class="input-container ventana">
+          <label for="euro10">10€:</label>
+          <input type="number" id="euro10" min="0" max="45" step="1" value="0">
+          <div class="progress-bar-container">
+            <progress id="progress10" max="45" value="0"></progress>
+            <span id="progress10-label">0% de 45 ( UF )</span>
+          </div>
+          </div>
+    
+          <div class="input-container ventana">
+          <label for="euro5">5€:</label>
+          <input type="number" id="euro5" min="0" max="45" step="1" value="0">
+          <div class="progress-bar-container">
+            <progress id="progress5" max="45" value="0"></progress>
+            <span id="progress5-label">0% de 45 ( UF )</span>
+          </div>
+          </div>
+    
+          <div class="input-container ventana">
+          <label for="euro2">2€:</label>
+          <input type="number" id="euro2" min="0" max="120" step="1" value="0">
+          <div class="progress-bar-container">
+            <progress id="progress2" max="120" value="0"></progress>
+            <span id="progress2-label"> 0% de 120 ( UF )</span>
+          </div>
+          </div>
+    
+          <div class="input-container ventana">
+          <label for="euro1">1€:</label>
+          <input type="number" id="euro1" min="0" max="150" step="1" value="0">
+          <div class="progress-bar-container">
+            <progress id="progress1" max="150" value="0"></progress>
+            <span id="progress1-label"> 0% de 150 ( UF )</span>
+          </div>
+          </div>
+    
+          <div class="input-container ventana">
+          <label for="cent50">0.5€:</label>
+          <input type="number" id="cent50" min="0" max="135" step="1" value="0">
+          <div class="progress-bar-container">
+            <progress id="progress50" max="135" value="0"></progress>
+            <span id="progress50-label"> 0% de 135 ( UF )</span>
+          </div>
+          </div>
+    
+          <div class="input-container ventana">
+          <label for="cent20">0.2€:</label>
+          <input type="number" id="cent20" min="0" max="190" step="1" value="0">
+          <div class="progress-bar-container">
+            <progress id="progress20cent" max="190" value="0"></progress>
+            <span id="progress20cent-label"> 0% de 190 ( UF )</span>
+          </div>
+          </div>
+    
+          <div class="input-container ventana">
+            <label for="cent10">0.10€:</label>
+            <input type="number" id="cent10" min="0" max="245" step="1" value="0">
+            <div class="progress-bar-container">
+              <progress id="progress10cent" max="245" value="0"></progress>
+              <span id="progress10cent-label"> 0% de 245 ( UF )</span>
+            </div>
+            </div>
+      
+          <div class="input-container ventana">
+            <label for="cent5">0.05€:</label>
+            <input type="number" id="cent5" min="0" max="245" step="1" value="0">
+            <div class="progress-bar-container">
+              <progress id="progress5cent" max="245" value="0"></progress>
+              <span id="progress5cent-label"> 0% de 245 ( UF )</span>
+            </div>
+          </div>
+      
+          <div class="input-container ventana">
+            <label for="cent2">0.02€:</label>
+            <input type="number" id="cent2" min="0" max="310" step="1" value="0">
+            <div class="progress-bar-container">
+              <progress id="progress2cent" max="310" value="0"></progress>
+              <span id="progress2cent-label"> 0% de 310 ( UF )</span>
+            </div>
+          </div>
+      
+          <div class="input-container ventana">
+            <label for="cent1">0.01€:</label>
+            <input type="number" id="cent1" min="0" max="390" step="1" value="0">
+            <div class="progress-bar-container">
+              <progress id="progress1cent" max="390" value="0"></progress>
+              <span id="progress1cent-label">0% de 390 ( UF )</span>
+            </div>
+          </div>
+            <div class="button-container">
+              <button class="ventana" type="button" id="terminar-button">Terminar</button>
+              <button class="ventana" type="button" id="siguiente-button">Siguiente</button>
+            </div>
+            <div class="contenedorP" id="ventanaReporte">
+              <div><h2>Reporte</h2></div>
+              <div class="contenedorT" >
+                <label class="label-reporte">Tipo</label>
+                <label class="label-reporte">(u)Faltantes</label>
+                <label class="label-reporte">En €</label>
+              </div>
+              <div class="contenedorL" >
+                <label class="label-reporte">20€</label>
+                <label class="label-reporte" id="labelUF20e">-</label>
+                <label class="label-reporte" id="labelEuros20e">-</label>
+              </div>
+              <div class="contenedorL" >
+                <label class="label-reporte">10€</label>
+                <label class="label-reporte" id="labelUF10e">-</label>
+                <label class="label-reporte" id="labelEuros10e">-</label>
+              </div>
+              <div class="contenedorL" >
+                <label class="label-reporte">5€</label>
+                <label class="label-reporte" id="labelUF5e">-</label>
+                <label class="label-reporte" id="labelEuros5e">-</label>
+              </div>
+              <div class="contenedorL" >
+                <label class="label-reporte">2€</label>
+                <label class="label-reporte" id="labelUF2e">-</label>
+                <label class="label-reporte" id="labelEuros2e">-</label>
+              </div>
+              <div class="contenedorL" >
+                <label class="label-reporte">1€</label>
+                <label class="label-reporte" id="labelUF1e">-</label>
+                <label class="label-reporte" id="labelEuros1e">-</label>
+              </div>
+              <div class="contenedorL" >
+                <label class="label-reporte">50c</label>
+                <label class="label-reporte" id="labelUF50c">-</label>
+                <label class="label-reporte" id="labelEuros50c">-</label>
+              </div>
+              <div class="contenedorL" >
+                <label class="label-reporte">20c</label>
+                <label class="label-reporte" id="labelUF20c">-</label>
+                <label class="label-reporte" id="labelEuros20c">-</label>
+              </div>
+              <div class="contenedorL" >
+                <label class="label-reporte">10c</label>
+                <label class="label-reporte" id="labelUF10c">-</label>
+                <label class="label-reporte" id="labelEuros10c">-</label>
+              </div>
+              <div class="contenedorL" >
+                <label class="label-reporte">5c</label>
+                <label class="label-reporte" id="labelUF5c">-</label>
+                <label class="label-reporte" id="labelEuros5c">-</label>
+              </div>
+              <div class="contenedorL" >
+                <label class="label-reporte">2c</label>
+                <label class="label-reporte" id="labelUF2c">-</label>
+                <label class="label-reporte" id="labelEuros2c">-</label>
+              </div>
+              <div class="contenedorL" >
+                <label class="label-reporte">1c</label>
+                <label class="label-reporte" id="labelUF1c">-</label>
+                <label class="label-reporte" id="labelEuros1c">-</label>
+              </div>
+              <div class="contenedorT" >
+                <label class="label-reporte">Total €:</label>
+                <label class="label-reporte">-</label>
+                <label class="label-reporte" id="labelTeruos"></label>
+              </div>
+              
+           </div>
+            
+          </form>
+          
+      </div>
+      <form class="VentanaIngreso ventana" id="usuario-form">
+          <div class="close-button" id="cobro-close-button">
+            <span class="close-icon"></span>
+          </div>
+          <h2 class="TextoSombra">¡Bienvenido! 😊</h2>
+          <input type="text" placeholder="Usuario">
+          <input type="password" placeholder="Contraseña">
+          <input type="submit" value="Ingresar">
+      </form>  
+    </main>
+    
+  </div>
+  <footer class="ventana">
+    <p class="welcome-massage">DINOSOFT</p>
+  </footer>
+    <script>
+  
+        document.addEventListener('DOMContentLoaded', function() {
+            const labelReporte = document.getElementById('label-reporte');
+            const cobroLink = document.querySelector('nav ul li:nth-child(2) a');
+            const usuarioLink = document.querySelector('nav ul li:nth-child(3) a');
+            const salirLink = document.querySelector('nav ul li:nth-child(4) a');
+            const cobroForm = document.getElementById('cobro-form');
+            const usuarioForm = document.getElementById('usuario-form');
+            const cobroCloseButton = document.getElementById('usuario-close-button');
+            const usuarioCloseButton = document.getElementById('cobro-close-button');
+            const menuItems = document.querySelectorAll('nav ul li a');
+            // Obtener referencias a los elementos de entrada
+            const euro20Input = document.getElementById('euro20');
+            const euro10Input = document.getElementById('euro10');
+            const euro5Input = document.getElementById('euro5');
+            const euro2Input = document.getElementById('euro2');
+            const euro1Input = document.getElementById('euro1');
+            const cent50Input = document.getElementById('cent50');
+            const cent20Input = document.getElementById('cent20');
+            const cent10Input = document.getElementById('cent10');
+            const cent5Input = document.getElementById('cent5');
+            const cent2Input = document.getElementById('cent2');
+            const cent1Input = document.getElementById('cent1');
+            // Obtener referencias a los elementos de progreso y etiquetas de progreso
+            const progress20 = document.getElementById('progress20');
+            const progress20Label = document.getElementById('progress20-label');
+            const progress10 = document.getElementById('progress10');
+            const progress10Label = document.getElementById('progress10-label');
+            const progress5 = document.getElementById('progress5');
+            const progress5Label = document.getElementById('progress5-label');
+            const progress2 = document.getElementById('progress2');
+            const progress2Label = document.getElementById('progress2-label');
+            const progress1 = document.getElementById('progress1');
+            const progress1Label = document.getElementById('progress1-label');
+            const progress50 = document.getElementById('progress50');
+            const progress50Label = document.getElementById('progress50-label');
+            const progress20cent = document.getElementById('progress20cent');
+            const progress20centLabel = document.getElementById('progress20cent-label');
+            const progress10cent = document.getElementById('progress10cent');
+            const progress10centLabel = document.getElementById('progress10cent-label');
+            const progress5cent = document.getElementById('progress5cent');
+            const progress5centLabel = document.getElementById('progress5cent-label');
+            const progress2cent = document.getElementById('progress2cent');
+            const progress2centLabel = document.getElementById('progress2cent-label');
+            const progress1cent = document.getElementById('progress1cent');
+            const progress1centLabel = document.getElementById('progress1cent-label');
+            // Obtener referencias de labels reporte
+            const labelUF20e = document.getElementById('labelUF20e');
+            const labelUF10e = document.getElementById('labelUF10e');
+            const labelUF5e = document.getElementById('labelUF5e');
+            const labelUF2e = document.getElementById('labelUF2e');
+            const labelUF1e = document.getElementById('labelUF1e');
+            const labelUF50c = document.getElementById('labelUF50c');
+            const labelUF20c = document.getElementById('labelUF20c');
+            const labelUF10c = document.getElementById('labelUF10c');
+            const labelUF5c = document.getElementById('labelUF5c');
+            const labelUF2c = document.getElementById('labelUF2c');
+            const labelUF1c = document.getElementById('labelUF1c');
+
+            const LEuros20e = document.getElementById('labelEuros20e');
+            const LEuros10e = document.getElementById('labelEuros10e');
+            const LEuros5e = document.getElementById('labelEuros5e');
+            const LEuros2e = document.getElementById('labelEuros2e');
+            const LEuros1e = document.getElementById('labelEuros1e');
+            const LEuros50c = document.getElementById('labelEuros50c');
+            const LEuros20c = document.getElementById('labelEuros20c');
+            const LEuros10c = document.getElementById('labelEuros10c');
+            const LEuros5c = document.getElementById('labelEuros5c');
+            const LEuros2c = document.getElementById('labelEuros2c');
+            const LEuros1c = document.getElementById('labelEuros1c');
+            const LTeuros = document.getElementById('labelTeruos');
+
+            const DatosFormularios = [];
+            //obtener los botones terminar y siquiente
+            const terminarButton = document.getElementById('terminar-button');
+            const siguienteButton = document.getElementById('siguiente-button');
+            //obtener los inputs de texto y numerivos
+            const inputTexto = document.getElementById('nombre');
+            const inputsNumericos = document.querySelectorAll('#cobro-form input[type="number"]');
+            
+            // Función para calcular y actualizar el porcentaje y las unidades faltantes en la barra de progreso
+            function calcularPorcentajeUnidadesFaltantes(input, progress, max, label) {
+              input.addEventListener('input', () => {
+                const valor = parseInt(input.value);
+                const porcentaje = (valor * 100) / max;
+                const porcentaje1 = parseInt((valor * 100) / max);
+                const unidadesFaltantes = Math.ceil((max * 70) / 100) - valor;
+                progress.value = valor;
+                label.textContent = `${porcentaje1}% de:${max}(${unidadesFaltantes})`;
+
+                // Cambiar color del label y la barra de progreso según el porcentaje
+                if (porcentaje < 6) {
+                label.classList.add('red-text');
+                label.classList.remove('blue-text');
+                progress.dataset.progressColor = 'red';
+                } else if (porcentaje > 90) {
+                label.classList.add('blue-text');
+                label.classList.remove('red-text');
+                progress.dataset.progressColor = 'blue';
+                } else {
+                label.classList.remove('red-text');
+                label.classList.remove('blue-text');
+                progress.removeAttribute('data-progress-color');
+                }
+              });
+            }
+            // Calcular y actualizar el porcentaje y las unidades faltantes para cada input
+            calcularPorcentajeUnidadesFaltantes(euro20Input, progress20, 45, progress20Label);
+            calcularPorcentajeUnidadesFaltantes(euro10Input, progress10, 45, progress10Label);
+            calcularPorcentajeUnidadesFaltantes(euro5Input, progress5, 45, progress5Label);
+            calcularPorcentajeUnidadesFaltantes(euro2Input, progress2, 120, progress2Label);
+            calcularPorcentajeUnidadesFaltantes(euro1Input, progress1, 150, progress1Label);
+            calcularPorcentajeUnidadesFaltantes(cent50Input, progress50, 135, progress50Label);
+            calcularPorcentajeUnidadesFaltantes(cent20Input, progress20cent, 190, progress20centLabel);
+            calcularPorcentajeUnidadesFaltantes(cent10Input, progress10cent, 245, progress10centLabel);
+            calcularPorcentajeUnidadesFaltantes(cent5Input, progress5cent, 245, progress5centLabel);
+            calcularPorcentajeUnidadesFaltantes(cent2Input, progress2cent, 310, progress2centLabel);
+            calcularPorcentajeUnidadesFaltantes(cent1Input, progress1cent, 390, progress1centLabel);
+
+            // Funcion para verificar el contenido de los inputs
+            function verificarInputs(){
+              
+              // Variables para verificar si hay errores
+              let hayErrores = false;
+              let primerInputError = null;
+              // declaracion de array donde se guardan los datos
+              inputs_con_error = [];
+
+              // Validación del input de texto
+              if (inputTexto.value.trim() === '') {
+                hayErrores = true;
+                inputs_con_error.push(inputTexto.id);
+                if (!primerInputError) {
+                  primerInputError = inputTexto;
+                }
+                resaltarInput(inputTexto);
+              }
+              // Validación de los inputs numéricos
+              inputsNumericos.forEach(function(input) {
+                if (input.value === '' || isNaN(input.value) || parseInt(input.value) !== parseFloat(input.value) || input.value < input.min || input.value > parseInt(input.max)) {
+                  hayErrores = true;
+                  inputs_con_error.push(input.id);
+                  if (!primerInputError) {
+                    primerInputError = input;
+                  }
+                  resaltarInput(input);                    
+                }
+              });
+              // Mostrar mensaje de error y posicionar cursor en el primer input con error
+              if (hayErrores) {
+                    alert('Algunos datos no son validos:.'+inputs_con_error.join(", "));
+                    // Posicionar cursor en el primer input con error
+                    if (primerInputError) {
+                        primerInputError.focus();
+                    }
+                    
+              }
+              return hayErrores;
+            }
+            
+            // Presionar Boton Siguiente
+            siguienteButton.addEventListener('click', function() {
+                
+                const barrasDeProgreso = document.querySelectorAll('#cobro-form progress');
+                const spansDeProgreso = document.querySelectorAll('#cobro-form span:not(.close-icon)');
+                if (!verificarInputs()) {
+                    // Obtén referencias a los elementos del DOM
+                    const ventanasContainer = document.getElementById("ventanas-container");
+                    // Clona el formulario y su contenido
+                    const formularioClonado = document.getElementById("cobro-form").cloneNode(true);
+
+                    // Genera un nuevo ID único para el formulario clonado
+                    const nuevoID = "cobro-form-" + Date.now();
+                    formularioClonado.setAttribute("id", nuevoID);
+
+                    // Encuentra el elemento de nombre y cambia su placeholder
+                    const nombreElement = formularioClonado.querySelector("#nombre");
+                    nombreElement.setAttribute("placeholder", "nombre-" + nuevoID);
+
+                    // Encuentra todos los inputs en el formulario clonado
+                    const inputs = formularioClonado.querySelectorAll("input");
+
+                    // Reemplaza cada input por un label con el valor y la (u)
+                    inputs.forEach((input) => {
+                      const label = document.createElement("label");
+                      const valor = input.value;
+                      if (input.id !== 'nombre'){
+                        label.textContent = valor + " (u)";
+                      }else{
+                        label.textContent = valor;
+                      }
+                        
+                      input.parentNode.replaceChild(label, input);
+                    });
+
+                    // Oculta los botones "Siguiente", "Calcular" y "Clonar" en el formulario clonado
+                    const siguienteButton = formularioClonado.querySelector("#siguiente-button");
+                    const terminarButton = formularioClonado.querySelector("#terminar-button");
+                    const ventanaReporte = formularioClonado.querySelector("#ventanaReporte");
+                    siguienteButton.style.display = "none";
+                    terminarButton.style.display = "none";
+                    ventanaReporte.style.display = "none";
+
+                    // Agrega el formulario clonado al contenedor de ventanas
+                    ventanasContainer.appendChild(formularioClonado);
+                    // Calcular Unidades faltantes y grabar en un array
+                    calcularUnidadesFaltantes();
+                    // Restablecer estilos de todos los inputs
+                    inputTexto.focus();
+                    resetearEstilos(inputsNumericos);
+                    resetearEstiloInput(inputTexto);
+                    BorrarValoresInputs(inputsNumericos);
+                    BorrarConteidoInputTexto(inputTexto);
+                    BorrarValorbarraProgreso(barrasDeProgreso);
+                    BorrarTextoSpanProgress(spansDeProgreso);
+                    alert(grabarDatos());      
+                
+                  
+                }
+            });
+            // presionar el boton Terminar
+            terminarButton.addEventListener('click', function() {
+              if (!verificarInputs()) {
+                calcularUnidadesFaltantes();
+                alert(grabarDatos());
+                siguienteButton.style.display = "none";
+                terminarButton.style.display = "none";
+              }
+            });
+            // function Calcular Unidades faltantes y grabar en un array
+            function calcularUnidadesFaltantes(){
+              DatosFormularios.push({
+                      nombre: nombre.value.trim(),
+
+                      euros20: euro20Input.value,
+                      unidadesFaltantes20: Math.max(Math.ceil((euro20Input.max * 70) / 100) - euro20Input.value, 0),
+                      
+                      euros10: euro10Input.value,
+                      unidadesFaltantes10: Math.max(Math.ceil((euro10Input.max * 70) / 100) - euro10Input.value, 0),
+                      
+                      euros5: euro5Input.value,
+                      unidadesFaltantes5: Math.max(Math.ceil((euro5Input.max * 70) / 100) - euro5Input.value, 0),
+                      
+                      euros2: euro2Input.value,
+                      unidadesFaltantes2: Math.max(Math.ceil((euro2Input.max * 70) / 100) - euro2Input.value, 0),
+                      
+                      euros1: euro1Input.value,
+                      unidadesFaltantes1: Math.max(Math.ceil((euro1Input.max * 70) / 100) - euro1Input.value, 0),
+                      
+                      cent50: cent50Input.value,
+                      unidadesFaltantes50c: Math.max(Math.ceil((cent50Input.max * 70) / 100) -cent50Input.value, 0),
+                      
+                      cent20: cent20Input.value,
+                      unidadesFaltantes20c: Math.max(Math.ceil((cent20Input.max * 70) / 100) - cent20Input.value, 0),
+                      
+                      cent10: cent10Input.value,
+                      unidadesFaltantes10c: Math.max(Math.ceil((cent10Input.max * 70) / 100) - cent10Input.value, 0),
+
+                      cent5: cent5Input.value,
+                      unidadesFaltantes5c: Math.max(Math.ceil((cent5Input.max * 70) / 100) - cent5Input.value, 0),
+
+                      cent2: cent2Input.value,
+                      unidadesFaltantes2c: Math.max(Math.ceil((cent2Input.max * 70) / 100) - cent2Input.value, 0),
+
+                      cent1: cent1Input.value,
+                      unidadesFaltantes1c: Math.max(Math.ceil((cent1Input.max * 70) / 100) - cent1Input.value, 0)
+
+                    });
+            }
+            // funcion grabar datos form-cambios
+            function grabarDatos(){
+              let total20 = 0;
+              let total10 = 0;
+              let total5 = 0;
+              let total2 = 0;
+              let total1 = 0;
+              let total50c = 0;
+              let total20c = 0;
+              let total10c = 0;
+              let total5c = 0;
+              let total2c = 0;
+              let total1c = 0;
+
+              for (let i = 0; i < DatosFormularios.length; i++) {
+                const dato = DatosFormularios[i];
+                total20 += dato.unidadesFaltantes20;
+                total10 += dato.unidadesFaltantes10;
+                total5 += dato.unidadesFaltantes5;
+                total2 += dato.unidadesFaltantes2;
+                total1 += dato.unidadesFaltantes1;
+                total50c += dato.unidadesFaltantes50c;
+                total20c += dato.unidadesFaltantes20c;
+                total10c += dato.unidadesFaltantes10c;
+                total5c += dato.unidadesFaltantes5c;
+                total2c += dato.unidadesFaltantes2c;
+                total1c += dato.unidadesFaltantes1c;
+              }
+              labelUF20e.textContent = total20+'(u)';
+              labelUF10e.textContent = total10+'(u)';
+              labelUF5e.textContent =  total5+'(u)';
+              labelUF2e.textContent =  total2+'(u)';
+              labelUF1e.textContent =  total1+'(u)';
+              labelUF50c.textContent = total50c+'(u)';
+              labelUF20c.textContent = total20c+'(u)';
+              labelUF10c.textContent = total10c+'(u)';
+              labelUF5c.textContent =  total5c+'(u)';
+              labelUF2c.textContent =  total2c+'(u)';
+              labelUF1c.textContent =  total1c+'(u)';
+
+              LEuros20e.textContent = (total20 * 20)+'€';
+              LEuros10e.textContent = (total10 * 10)+'€';
+              LEuros5e.textContent = (total5 * 5)+'€';
+              LEuros2e.textContent = (total2 * 2)+'€';
+              LEuros1e.textContent = (total1 * 1)+'€';
+              LEuros50c.textContent = (total50c * 0.5)+'€';
+              LEuros20c.textContent = (total20c * 0.20)+'€';
+              LEuros10c.textContent = (total10c * 0.10)+'€';
+              LEuros5c.textContent = (total5c * 0.05)+'€';
+              LEuros2c.textContent = (total2c * 0.02)+'€';
+              LEuros1c.textContent = (total1c * 0.01)+'€';
+
+              LTeuros.textContent = ((total20 * 20)+(total10 * 10)+(total5 * 5)+(total2 * 2)+(total1 * 1)
+                                    +(total50c * 0.5)+(total20c * 0.20)+(total10c * 0.10)+(total5c * 0.05)
+                                    +(total2c * 0.02)+(total1c * 0.01)).toFixed(2);
+              const mensaje1 =  `Total UF 20€: ${total20}\n` +
+                                `Total UF 10€: ${total10}\n` +
+                                `Total UF  5€: ${total5}\n` +
+                                `Total UF  2€: ${total2}\n` +
+                                `Total UF  1€: ${total1}\n` +
+                                `Total UF 50c: ${total50c}\n` +
+                                `Total UF 20c: ${total20c}\n` +
+                                `Total UF 10c: ${total10c}\n` +
+                                `Total UF  5c: ${total5c}\n` +
+                                `Total UF  2c: ${total2c}\n` +
+                                `Total UF  1c: ${total1c}`;
+
+              return mensaje1;
+
+              //Grabar a un archivo en disco
+
+              //const contenidoArchivo = JSON.stringify(DatosFormularios);
+              //const archivoBlob = new Blob([contenidoArchivo], { type: 'text/plain' });
+              //const urlArchivo = URL.createObjectURL(archivoBlob);
+              //const enlaceDescarga = document.createElement('a');
+              //enlaceDescarga.href = urlArchivo;
+              //enlaceDescarga.download = 'datos_formularios.txt';
+              //enlaceDescarga.click();
+            }
+            // Función para restablecer estilos de los inputs numéricos
+            function resetearEstilos(inputs) {
+                inputs.forEach(function(input) {
+                input.style.borderColor = '';
+                });
+            }
+            // Funcion para borrar valores de todos los inputs numericos
+            function BorrarValoresInputs(inputs) {
+                inputs.forEach(function(input) {
+                input.value=0;
+                });
+            }
+             // Función para borrar contenido input de texto
+             function BorrarConteidoInputTexto(input) {
+                input.value = '';
+            }
+            // Función para restablecer estilo de un input de texto
+            function resetearEstiloInput(input) {
+                input.style.borderColor = '';
+            }
+            // Función para resaltar un input con un color rojo
+            function resaltarInput(input) {
+                input.style.borderColor = 'red';
+            }
+            function BorrarTextoSpanProgress(spans){
+                spans.forEach(function(span){
+                  span.textContent = span.textContent.replace(/\d+%/, '0%').replace( /\(\d+\)/, '(UF)');
+                });
+               
+            };
+            function BorrarValorbarraProgreso(barras){
+              barras.forEach(function(barra){ barra.value = 0;});
+            };
+
+            // Agregar un controlador de eventos de clic a cada elemento del menú
+            menuItems.forEach(item => {
+                item.addEventListener('click', () => {
+                // Verificar si el menú está en modo vertical utilizando una consulta de medios
+                if (window.matchMedia('(max-width: 768px)').matches) {
+                    // Contraer el menú
+                    menuIcon.classList.remove('open');
+                    menuContent.classList.remove('open');
+                }
+                });
+            });
+            // boton cerrar del formulario cambios
+            cobroCloseButton.addEventListener('click', function() {
+                cobroForm.style.display = 'none';
+            });
+            // Boton cerrar formulario usuario
+            usuarioCloseButton.addEventListener('click', function() {
+                usuarioForm.style.display = 'none';
+            });
+  
+  
+            //Funciones para contraer menu vertical
+            cobroLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                cobroForm.style.display = 'block';
+                usuarioForm.style.display = 'none';
+            });
+    
+            usuarioLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                usuarioForm.style.display = 'block';
+                cobroForm.style.display = 'none';
+            });
+    
+            salirLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.close();
+            });
+        });
+  
+        // funciones del menu icon---------------
+        const menuIcon = document.querySelector('.menu-icon');
+        const menuContent = document.querySelector('.menu-content');
+        const nav = document.querySelector('nav');
+  
+        menuIcon.addEventListener('click', () => {
+          menuIcon.classList.toggle('open');
+          menuContent.classList.toggle('open');
+          updateMenuDirection();
+        });
+  
+        window.addEventListener('resize', updateMenuDirection);
+  
+        function updateMenuDirection() {
+          if (window.innerWidth <= 768 && nav.offsetWidth > window.innerWidth) {
+            nav.classList.add('vertical');
+          } else {
+            nav.classList.remove('vertical');
+          }
+        }
+  
+        updateMenuDirection(); // Llamar a la función inicialmente al cargar la página
+        //------------------------------------------
+    </script>
+  </body>
+  
+  </html>
